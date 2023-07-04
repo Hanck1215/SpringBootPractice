@@ -4,7 +4,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 	http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	
+	
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sx</groupId>
 	<artifactId>hello</artifactId>
 	<version>1.0-SNAPSHOT</version>
+	
+	
+	<!--
+		父專案的座標，如果專案中沒有規定某個元素的值，那麼父專案中的對應值即為專案的預設值。
+	-->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.6.4</version>
+	</parent>
