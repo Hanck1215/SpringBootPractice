@@ -1,1 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- 輸出到控制台 -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<!--
+				日誌輸出格式: %d 表示日期時間; %thread 表示執行緒名稱;
+				%-5level: 等級從左顯示五個字元寬度;
+				%logger{50}: 表示logger名字最常50個字元，否則按照句點分割;
+				%msg: 日誌訊息; %n是分行符號。
+			-->
+			<pattern>
+				%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	
+	<!-- 必需的節點，用於指定最基礎的日誌輸出等級，root元素只有一個level屬性 -->
+	<root level="INFO">
+		<!-- 引用的appender會增加到這個logger -->
+		<appender-ref ref="STDOUT"/>
+	</root>
+</configuration>
