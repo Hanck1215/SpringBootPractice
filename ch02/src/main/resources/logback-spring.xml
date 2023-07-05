@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- 輸出到控制台 -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<!--
+				日誌輸出格式: %d 表示日期時間; %thread 表示執行緒名稱;
+				%-5level: 等級從左顯示五個字元寬度;
+				%logger{50}: 表示logger名字最常50個字元，否則按照句點分割;
+				%msg: 日誌訊息; %n是分行符號。
+			-->
+			<pattern>
+				%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 輸出到檔案 -->
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	
+	<!-- 當發生滾動時，決定RollingFileAppender的行為，涉及檔案移動和重新命名。
+		 SizeAndTimeBasedRollingPolicy: 滾動策略，它根據檔案大小和時間來制定滾動策略，
+		 既負責滾動也負責觸發滾動。
+	-->
+	
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+	
+	<!--
+		 滾動時產生的檔案的存放位置及檔案名稱 %{yyyy-MM-dd}: 按天進行日誌滾動;%i:
+		 當檔案大小超過maxFileSize時，按照i進行檔案滾動。
+	-->
+	
+			<fileNamePattern>d:\\logs\\sys-%d{yyyy-MM-dd}-%i.log </fileNamePattern>
+	
+	<!--
+		  可選節點，控制保留的歸檔檔案的最大數量，超出數量就刪除舊檔案。假設設定每天捲動，
+		  且maxHistory是180，則只保留最近180天的檔案，刪除之前的舊檔案。注意，在刪除舊檔
+		  案時，那些為了歸檔而建立的目錄也會被刪除。
+	-->
+	
+			<MaxHistory>180</MaxHistory>
+			<maxFileSize>1000MB</maxFileSize>
+	
+	<!--
+		  當日誌超過maxFileSize指定的大小時，根據上面提到的%i進行日誌滾動
+	-->
+	
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>100MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		
+		</rollingPolicy>
+		<encoder>
+			<pattern>
+				%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<springProfile name="dev">
+		<root level="INFO">
+			<appender-ref ref="FILE">
+		</root>
+	</springProfile>
+	
+</configuration>
