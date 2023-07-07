@@ -9,5 +9,10 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 public class User {
-	
+	private String username ;
+	private String password ;
+	private Boolean gender ;
+	private Integer age ;
+	private LocalDate birthday ;
+	private List<String> interests ;
 }
