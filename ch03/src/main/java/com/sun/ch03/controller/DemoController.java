@@ -3,6 +3,7 @@ package com.sun.ch03.controller;
 import org.springframework.web.bind.annotation.RequestMapping ;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController ;
+import com.sun.ch03.model.User;
 
 @RestController
 @RequestMapping("/handle")
@@ -13,6 +14,12 @@ public class DemoController {
 			             @RequestParam(name = "password") String password) {
 		System.out.println(name) ;
 		System.out.println(password) ;
+		return "Finish" ;
+	}
+	
+	@RequestMapping("/obj")
+	public String handleObj(User user) {
+		System.out.println(user) ; 
 		return "Finish" ;
 	}
 }

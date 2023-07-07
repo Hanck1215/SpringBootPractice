@@ -15,4 +15,9 @@ public class User {
 	private Integer age ;
 	private LocalDate birthday ;
 	private List<String> interests ;
+	
+	public String getUsername() { return this.username ; }
+	public String getPassword() { return this.password ; }
+	public Boolean getGender() { return this.gender ; }
+	public Integer getAge() { return this.age ; }
 }
