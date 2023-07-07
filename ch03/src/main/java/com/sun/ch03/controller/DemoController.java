@@ -3,6 +3,7 @@ package com.sun.ch03.controller;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping ;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
@@ -46,6 +47,12 @@ public class DemoController {
 			System.out.println("上傳檔案的檔案名稱: " + multipartFile.getOriginalFilename()) ;
 			System.out.println("上傳檔案的大小: " + multipartFile.getSize()) ;
 		}
+		return "Finish" ;
+	}
+	
+	@RequestMapping("/header")
+	public String handleHeader(@RequestHeader("User-Agent") String userAgent) {
+		System.out.println(userAgent) ;
 		return "Finish" ;
 	}
 	
