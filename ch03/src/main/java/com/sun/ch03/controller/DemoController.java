@@ -1,6 +1,7 @@
 package com.sun.ch03.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -53,6 +54,12 @@ public class DemoController {
 	@RequestMapping("/header")
 	public String handleHeader(@RequestHeader("User-Agent") String userAgent) {
 		System.out.println(userAgent) ;
+		return "Finish" ;
+	}
+	
+	@RequestMapping("/allHeaders")
+	public String handleAllHeaders(@RequestHeader Map headersMap) {
+		System.out.println(headersMap) ;
 		return "Finish" ;
 	}
 	
