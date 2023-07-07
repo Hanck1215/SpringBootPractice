@@ -1,5 +1,6 @@
 package com.sun.ch03.controller;
 
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping ;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController ;
@@ -20,6 +21,13 @@ public class DemoController {
 	@RequestMapping("/obj")
 	public String handleObj(User user) {
 		System.out.println(user) ; 
+		System.out.println(user.getUsername()) ; 
+		return "Finish" ;
+	}
+	
+	@RequestMapping("/json")
+	public String handleJson(@RequestBody User user) {
+		System.out.println(user.getUsername()) ; 
 		return "Finish" ;
 	}
 }
