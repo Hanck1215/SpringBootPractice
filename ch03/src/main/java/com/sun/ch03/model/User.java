@@ -30,4 +30,5 @@ public class User {
 	public String getPassword() { return this.password ; }
 	public Boolean getGender() { return this.gender ; }
 	public Integer getAge() { return this.age ; }
+	public LocalDate getBirthday() { return this.birthday ; }
 }
