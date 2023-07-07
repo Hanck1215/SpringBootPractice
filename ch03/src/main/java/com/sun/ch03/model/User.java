@@ -31,4 +31,5 @@ public class User {
 	public Boolean getGender() { return this.gender ; }
 	public Integer getAge() { return this.age ; }
 	public LocalDate getBirthday() { return this.birthday ; }
+	public List<String> getInterests() { return this.interests ; }
 }
