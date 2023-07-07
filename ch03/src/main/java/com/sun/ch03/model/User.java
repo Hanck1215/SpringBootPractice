@@ -16,6 +16,16 @@ public class User {
 	private LocalDate birthday ;
 	private List<String> interests ;
 	
+	public User(String username, String password, Boolean gender, Integer age, LocalDate birthday, List<String> interests) {
+		this.username = username ;
+		this.password = password ;
+		this.gender = gender ;
+		this.age = age ;
+		this.birthday = birthday ;
+		this.interests = interests ;
+		
+	}
+	
 	public String getUsername() { return this.username ; }
 	public String getPassword() { return this.password ; }
 	public Boolean getGender() { return this.gender ; }
