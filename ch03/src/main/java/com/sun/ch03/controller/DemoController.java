@@ -41,9 +41,11 @@ public class DemoController {
 	}
 	
 	@RequestMapping("/file")
-	public String handleFile(@RequestPart(name = "file") MultipartFile multipartFile) {
-		System.out.println("上傳檔案的檔案名稱: " + multipartFile.getOriginalFilename()) ;
-		System.out.println("上傳檔案的大小: " + multipartFile.getSize()) ;
+	public String handleFile(@RequestPart(name = "file") List<MultipartFile> multipartFiles) {
+		for(MultipartFile multipartFile : multipartFiles) {
+			System.out.println("上傳檔案的檔案名稱: " + multipartFile.getOriginalFilename()) ;
+			System.out.println("上傳檔案的大小: " + multipartFile.getSize()) ;
+		}
 		return "Finish" ;
 	}
 	
