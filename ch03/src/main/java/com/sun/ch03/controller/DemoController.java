@@ -5,7 +5,10 @@ import java.util.List;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping ;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController ;
+import org.springframework.web.multipart.MultipartFile;
+
 import com.sun.ch03.model.User;
 
 @RestController
@@ -36,4 +39,15 @@ public class DemoController {
 		System.out.println(user.getUsername()) ; 
 		return "Finish" ;
 	}
+	
+	@RequestMapping("/file")
+	public String handleFile(@RequestPart(name = "file") MultipartFile multipartFile) {
+		System.out.println("上傳檔案的檔案名稱: " + multipartFile.getOriginalFilename()) ;
+		System.out.println("上傳檔案的大小: " + multipartFile.getSize()) ;
+		return "Finish" ;
+	}
+	
+	
+	
+	
 }
