@@ -33,6 +33,11 @@ public class DemoController {
 	public String handleObj(User user) {
 		System.out.println(user) ; 
 		System.out.println(user.getUsername()) ; 
+		System.out.println(user.getPassword()) ;
+		System.out.println(user.getAge()) ;
+		System.out.println(user.getGender()) ;
+		System.out.println(user.getBirthday()) ;
+		System.out.println(user.getInterests()) ; 
 		return "Finish" ;
 	}
 	
