@@ -77,11 +77,13 @@ html {
     text-shadow: 0 0 0.1em rgb(255, 235, 204), 0 0 0.1em rgb(255, 224, 88) ;
 }
 
-#basic-information {
-    color: rgb(41, 28, 9);
+.district {
     margin-top: 12px;
-    background: linear-gradient(to right, rgba(255, 249, 237, 0.658), transparent 105%) ;;
+    color: rgb(41, 28, 9);
+    background-color: antiquewhite;
+    background: linear-gradient(to right, rgba(255, 251, 243, 0.849), transparent 160%) ;;
     padding: 12px 24px;
+    padding-bottom: 50px;
     border-top: 2px rgba(53, 37, 19, 0.555) solid;
     border-left: 2px rgba(53, 37, 19, 0.555) solid;
     border-right: 2px rgba(53, 37, 19, 0.555) solid;
@@ -92,11 +94,24 @@ html {
     border-top-right-radius: 4px;
 }
 
-#basic-information h2 {
+.title {
     text-align: center;
     padding-bottom: 10px;
     border-bottom: 2px rgba(53, 37, 19, 0.5) solid;
     border-bottom-style:groove;
+}
+
+.question {
+    margin-top: 18px ;
+    padding-bottom: 60px;
+}
+
+.multiple-choice {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding-left: 10px;
 }
 
 #basic-information form {
@@ -132,45 +147,7 @@ input[type="text"] {
     max-width: 480px;
 }
 
-
-#multiple-choice {
-    margin-top: 12px;
-    color: rgb(41, 28, 9);
-    background-color: antiquewhite;
-    background: linear-gradient(to right, rgba(255, 251, 243, 0.849), transparent 160%) ;;
-    padding: 12px 24px;
-    padding-bottom: 50px;
-    border-top: 2px rgba(53, 37, 19, 0.555) solid;
-    border-left: 2px rgba(53, 37, 19, 0.555) solid;
-    border-right: 2px rgba(53, 37, 19, 0.555) solid;
-    border-bottom: 10px rgba(53, 37, 19, 0.555) solid;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-#multiple-choice h2 {
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 2px rgba(53, 37, 19, 0.5) solid;
-    border-bottom-style:groove;
-}
-
-#multiple-choice form {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    font-weight: bold;
-    font-size: 1.25rem;
-    padding-left: 10px;
-}
-
-#q1 {
-    margin-top: 18px ;
-    padding-bottom: 60px;
-}
-
-#q1 div {
+.question div {
     margin-top: 10px;
     margin-left: 20px;
     border: 2px rgba(53, 37, 19, 0.555) solid;
@@ -178,203 +155,9 @@ input[type="text"] {
     padding: 10px;
 }
 
-#q1 div:hover {
+.question div:hover {
     background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
 }
-
-#q2 {
-    margin-top: 18px ;
-    padding-bottom: 60px;
-}
-
-#q2 div {
-    margin-top: 10px;
-    margin-left: 20px;
-    border: 2px rgba(53, 37, 19, 0.555) solid;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-#q2 div:hover {
-    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
-}
-
-#q3 {
-    margin-top: 18px ;
-    padding-bottom: 60px;
-}
-
-#q3 div {
-    margin-left: 20px;
-    margin-top: 10px;
-    border: 2px rgba(53, 37, 19, 0.555) solid;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-#q3 div:hover {
-    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
-}
-
-#q4 {
-    margin-top: 18px ;
-}
-
-#q4-1 {
-    margin-left: 20px;
-    margin-top: 18px;
-    padding-bottom: 60px;
-}
-
-#q4-1 div {
-    margin-top: 10px;
-    margin-left: 20px;
-    border: 2px rgba(53, 37, 19, 0.555) solid;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-#q4-1 div:hover {
-    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
-}
-
-#q4-2 {
-    margin-left: 20px;
-    margin-top: 18px;
-    padding-bottom: 60px;
-}
-
-#q4-2 div {
-    margin-top: 10px;
-    margin-left: 20px;
-    border: 2px rgba(53, 37, 19, 0.555) solid;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-#q4-2 div:hover {
-    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
-}
-
-#q4-3 {
-    margin-left: 20px;
-    margin-top: 18px;
-    padding-bottom: 60px;
-}
-
-#q4-3 div {
-    margin-top: 10px;
-    margin-left: 20px;
-    border: 2px rgba(53, 37, 19, 0.555) solid;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-#q4-3 div:hover {
-    background: linear-gradient(to right, rgba(255, 239, 206, 0.849), transparent 105%) ;
-}
-
-#feedback {
-    margin-top: 12px;
-    color: rgb(41, 28, 9);
-    background-color: antiquewhite;
-    background: linear-gradient(to right, rgba(255, 251, 243, 0.849), transparent 160%) ;;
-    padding: 12px 24px;
-    padding-bottom: 50px;
-    border-top: 2px rgba(53, 37, 19, 0.555) solid;
-    border-left: 2px rgba(53, 37, 19, 0.555) solid;
-    border-right: 2px rgba(53, 37, 19, 0.555) solid;
-    border-bottom: 10px rgba(53, 37, 19, 0.555) solid;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-#feedback h2 {
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 2px rgba(53, 37, 19, 0.5) solid;
-    border-bottom-style:groove;
-}
-
-#feedback form {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    font-weight: bold;
-    font-size: 1.25rem;
-    padding-left: 10px;
-}
-
-#fq1 {
-    margin-top: 18px ;
-    padding-bottom: 60px;
-}
-
-#fq1 div {
-    margin-top: 10px;
-    margin-left: 20px;
-    border: 2px rgba(53, 37, 19, 0.555) solid;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-#fq1 div:hover {
-    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
-}
-
-#fq2 {
-    margin-top: 18px ;
-    padding-bottom: 60px;
-}
-
-#fq2 div {
-    margin-top: 10px;
-    margin-left: 20px;
-    border: 2px rgba(53, 37, 19, 0.555) solid;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-#fq2 div:hover {
-    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
-}
-
-#fq3 {
-    margin-top: 18px ;
-    padding-bottom: 60px;
-}
-
-#fq3 div {
-    margin-left: 20px;
-    margin-top: 10px;
-    border: 2px rgba(53, 37, 19, 0.555) solid;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-#fq3 div:hover {
-    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
-}
-
-#fq4 {
-    margin-top: 18px ;
-    padding-bottom: 60px;
-}
-
-#fq4 div {
-    margin-left: 20px;
-    margin-top: 10px;
-    border: 2px rgba(53, 37, 19, 0.555) solid;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-#fq4 div:hover {
-    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
-}
-
-
 
 #feedback-textarea-title {
     margin-top: 24px;
@@ -397,54 +180,13 @@ textarea {
     height: 24rem;
 }
 
-#contact {
-    margin-top: 12px;
-    color: rgb(41, 28, 9);
-    background-color: antiquewhite;
-    background: linear-gradient(to right, rgba(255, 251, 243, 0.849), transparent 160%) ;;
-    padding: 12px 24px;
-    padding-bottom: 50px;
-    border-top: 2px rgba(53, 37, 19, 0.555) solid;
-    border-left: 2px rgba(53, 37, 19, 0.555) solid;
-    border-right: 2px rgba(53, 37, 19, 0.555) solid;
-    border-bottom: 10px rgba(53, 37, 19, 0.555) solid;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-#contact h2 {
+#contact .title {
     margin-top: 12px;
 }
 
 #contact p { 
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-#team-profile {
-    margin-top: 12px;
-    color: rgb(41, 28, 9);
-    background-color: antiquewhite;
-    background: linear-gradient(to right, rgba(255, 251, 243, 0.849), transparent 160%) ;;
-    padding: 12px 24px;
-    padding-bottom: 50px;
-    border-top: 2px rgba(53, 37, 19, 0.555) solid;
-    border-left: 2px rgba(53, 37, 19, 0.555) solid;
-    border-right: 2px rgba(53, 37, 19, 0.555) solid;
-    border-bottom: 10px rgba(53, 37, 19, 0.555) solid;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-#team-profile h2 {
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 2px rgba(53, 37, 19, 0.5) solid;
-    border-bottom-style:groove;
 }
 
 #location {
@@ -493,23 +235,6 @@ textarea {
     background-color: #c7d8ad27;
     padding: 5%;
     border-radius: 12px;
-}
-
-#button {
-    margin-top: 12px;
-    color: rgb(41, 28, 9);
-    background-color: antiquewhite;
-    background: linear-gradient(to right, rgba(255, 251, 243, 0.849), transparent 160%) ;;
-    padding: 12px 24px;
-    padding-bottom: 50px;
-    border-top: 2px rgba(53, 37, 19, 0.555) solid;
-    border-left: 2px rgba(53, 37, 19, 0.555) solid;
-    border-right: 2px rgba(53, 37, 19, 0.555) solid;
-    border-bottom: 10px rgba(53, 37, 19, 0.555) solid;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
 }
 
 #button {
@@ -578,7 +303,8 @@ textarea {
         font-size: 1.5rem;
     }
 
-    #multiple-choice h2 {
+    .title {
+        margin-top: 5%;
         font-size: 2.5rem;
     }
 
@@ -586,122 +312,17 @@ textarea {
         zoom: 220%;
     }
 
-    #q1 {
+    .question {
         margin-top: 10%;
         font-size: 2rem;
     }
     
-    #q1 div {
+    .question div {
         margin-top: 2%;
         padding: 2rem;
         font-size: 1.6rem;
     }
     
-    #q2 {
-        margin-top: 10%;
-        font-size: 2rem;
-    }
-    
-    #q2 div {
-        margin-top: 2%;
-        padding: 2rem;
-        font-size: 1.6rem;
-    }
-    
-    #q3 {
-        margin-top: 10%;
-        font-size: 2rem;
-    }
-    
-    #q3 div {
-        margin-top: 2%;
-        padding: 2rem;
-        font-size: 1.6rem;
-    }
-    
-    #q4 {
-        margin-top: 10%;
-        font-size: 2rem;
-    }
-    
-    #q4-1 {
-        font-size: 1.6rem;
-    }
-    
-    #q4-1 div {
-        margin-top: 2%;
-        padding: 2rem;
-        font-size: 1.6rem;
-    }
-    
-    #q4-2 {
-        font-size: 1.6rem;
-    }
-    
-    #q4-2 div {
-        margin-top: 2%;
-        padding: 2rem;
-        font-size: 1.6rem;
-    }
-    
-    #q4-3 {
-        font-size: 1.6rem;
-    }
-    
-    #q4-3 div {
-        margin-top: 2%;
-        padding: 2rem;
-        font-size: 1.6rem;
-    }
-
-    #fq1 {
-        margin-top: 10%;
-        font-size: 2rem;
-    }
-    
-    #fq1 div {
-        margin-top: 2%;
-        padding: 2rem;
-        font-size: 1.6rem;
-    }
-    
-    #fq2 {
-        margin-top: 10%;
-        font-size: 2rem;
-    }
-    
-    #fq2 div {
-        margin-top: 2%;
-        padding: 2rem;
-        font-size: 1.6rem;
-    }
-
-    #fq3 {
-        margin-top: 10%;
-        font-size: 2rem;
-    }
-    
-    #fq3 div {
-        margin-top: 2%;
-        padding: 2rem;
-        font-size: 1.6rem;
-    }
-    
-
-    #fq4 {
-        margin-top: 10%;
-        font-size: 2rem;
-    }
-    
-    #fq4 div {
-        margin-top: 2%;
-        padding: 2rem;
-        font-size: 1.6rem;
-    }
-
-    #feedback h2 {
-        font-size: 2.5rem;
-    }
 
     #feedback form input {
         zoom: 220%;
@@ -716,11 +337,6 @@ textarea {
         font-size: 1.5rem;
         margin-top: 1%;
         margin-bottom: 0.5%;
-    }
-
-    #contact h2 {
-        margin-top: 5%;
-        font-size: 2.5rem;
     }
 
     #contact p {
@@ -756,11 +372,6 @@ textarea {
         max-width: 60%;
         padding: 5% 0 ;
         border-radius: 12px;
-    }
-
-    #team-profile h2 {
-        margin-top: 5%;
-        font-size: 2.5rem;
     }
     
     #location {
