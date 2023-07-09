@@ -1,9 +1,19 @@
+@charset "UTF-8";
 
+html {
+    font-size: 100%;
+}
 
 .wrapper {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 4%;
+}
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
 #container {
@@ -13,6 +23,7 @@
     border-bottom: 10px rgba(53, 36, 15, 0.623) solid;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    text-align: center;
 }
 
 #title-Questionnaire {
@@ -450,9 +461,10 @@ textarea {
     justify-content: center;
 }
 
-
 /* 手機版
 ------------------------------- */
 @media (max-width: 600px) {
-    
+    body {
+        width: max-content;
+    }
 }
