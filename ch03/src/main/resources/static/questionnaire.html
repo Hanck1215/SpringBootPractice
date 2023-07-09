@@ -108,58 +108,46 @@
 
         <div id="feedback" class="wrapper">
             <div><h2>問卷回饋</h2></div>
-            
-            <div id="feedback-table">
-                <form>
-                    <table>
-                        <tr>
-                            <th>Statement</th>
-                            <th>Strongly Agree</th>
-                            <th>Agree</th>
-                            <th>Neutral</th>
-                            <th>Disagree </th>
-                            <th>Strongly Disagree</th>
-                        </tr>
-        
-                        <tr>
-                            <td class="feedback-question">是否滿意問卷內容?</td>
-                            <td><label for="sa1"><div class="space"><input type="radio" id="sa1" name="row1"></div></label></td>
-                            <td><label for="a1"><div class="space"><input type="radio" id="a1" name="row1"></div></label></td>
-                            <td><label for="n1"><div class="space"><input type="radio" id="n1" name="row1"></div></label></td>
-                            <td><label for="d1"><div class="space"><input type="radio" id="d1" name="row1"></div></label></td>
-                            <td><label for="sd1"><div class="space"><input type="radio" id="sd1" name="row1"></div></label></td>
-                        </tr>
-    
-                        <tr>
-                            <td class="feedback-question">是否滿意問卷的呈現方式?</td>
-                            <td><label for="sa2"><div class="space"><input type="radio" id="sa2" name="row2"></div></label></td>
-                            <td><label for="a2"><div class="space"><input type="radio" id="a2" name="row2"></div></label></td>
-                            <td><label for="n2"><div class="space"><input type="radio" id="n2" name="row2"></div></label></td>
-                            <td><label for="d2"><div class="space"><input type="radio" id="d2" name="row2"></div></label></td>
-                            <td><label for="sd2"><div class="space"><input type="radio" id="sd2" name="row2"></div></label></td>
-                        </tr>
-    
-                        <tr>
-                            <td class="feedback-question">問卷訊息宣傳是否完整，您是否滿意?</td>
-                            <td><label for="sa3"><div class="space"><input type="radio" id="sa3" name="row3"></div></label></td>
-                            <td><label for="a3"><div class="space"><input type="radio" id="a3" name="row3"></div></label></td>
-                            <td><label for="n3"><div class="space"><input type="radio" id="n3" name="row3"></div></label></td>
-                            <td><label for="d3"><div class="space"><input type="radio" id="d3" name="row3"></div></label></td>
-                            <td><label for="sd3"><div class="space"><input type="radio" id="sd3" name="row3"></div></label></td>
-                        </tr>
-    
-                        <tr>
-                            <td class="feedback-question">網站的操作是否滿意?</td>
-                            <td><label for="sa4"><div class="space"><input type="radio" id="sa4" name="row4"></div></label></td>
-                            <td><label for="a4"><div class="space"><input type="radio" id="a4" name="row4"></div></label></td>
-                            <td><label for="n4"><div class="space"><input type="radio" id="n4" name="row4"></div></label></td>
-                            <td><label for="d4"><div class="space"><input type="radio" id="d4" name="row4"></div></label></td>
-                            <td><label for="sd4"><div class="space"><input type="radio" id="sd4" name="row4"></div></label></td>
-                        </tr>
-    
-                    </table>
-                </form>
-            </div>
+
+            <!------------------------------------------------------->
+            <form>
+                <div id="fq1">
+                    <label>1. 是否滿意問卷內容?</label>
+                    <label for="sa1"><div><input type="radio" id="sa1" name="fq1"> 非常同意</div></label>
+                    <label for="a1"><div><input type="radio" id="a1" name="fq1"> 同意</div></label>
+                    <label for="n1"><div><input type="radio" id="n1" name="fq1"> 普通</div></label>
+                    <label for="d1"><div><input type="radio" id="d1" name="fq1"> 不同意</div></label>
+                    <label for="sd1"><div><input type="radio" id="sd1" name="fq1"> 非常不同意</div></label>
+                </div>
+
+                <div id="fq2">
+                    <label>2. 是否滿意問卷的呈現方式?</label>
+                    <label for="sa2"><div><input type="radio" id="sa2" name="fq2"> 非常同意</div></label>
+                    <label for="a2"><div><input type="radio" id="a2" name="fq2"> 同意</div></label>
+                    <label for="n2"><div><input type="radio" id="n2" name="fq2"> 普通</div></label>
+                    <label for="d2"><div><input type="radio" id="d2" name="fq2"> 不同意</div></label>
+                    <label for="sd2"><div><input type="radio" id="sd2" name="fq2"> 非常不同意</div></label>
+                </div>
+
+                <div id="fq3">
+                    <label>3. 問卷訊息宣傳是否完整，您是否滿意?</label>
+                    <label for="sa3"><div><input type="radio" id="sa3" name="fq3"> 非常同意</div></label>
+                    <label for="a3"><div><input type="radio" id="a3" name="fq3"> 同意</div></label>
+                    <label for="n3"><div><input type="radio" id="n3" name="fq3"> 普通</div></label>
+                    <label for="d3"><div><input type="radio" id="d3" name="fq3"> 不同意</div></label>
+                    <label for="sd3"><div><input type="radio" id="sd3" name="fq3"> 非常不同意</div></label>
+                </div>
+
+                <div id="fq4">
+                    <label>4. 網站的操作是否滿意?</label>
+                    <label for="sa4"><div><input type="radio" id="sa4" name="fq4"> 非常同意</div></label>
+                    <label for="a4"><div><input type="radio" id="a4" name="fq4"> 同意</div></label>
+                    <label for="n4"><div><input type="radio" id="n4" name="fq4"> 普通</div></label>
+                    <label for="d4"><div><input type="radio" id="d4" name="fq4"> 不同意</div></label>
+                    <label for="sd4"><div><input type="radio" id="sd4" name="fq4"> 非常不同意</div></label>
+                </div>
+            </form>
+            <!------------------------------------------------------->
             
             <div id="feedback-textarea-title">
                 <h3>回饋我們~</h3>
@@ -176,11 +164,15 @@
                 <h2>需要我們持續跟您作接觸嗎?</h2>
                 <p>如果您在完成問卷後願意與我們進一步聯繫，請告訴我們最好的聯繫方式！（這是自由選填的，資料 對保密不公開。）</p>
             </div>
-            <div><input type="checkbox" id="email">透過電子郵件</div>
-            <div><input type="checkbox" id="madia">透過社交媒體(如:Line、IG、FB等等)</div>
-         </div>
+            <div class="method"><input type="checkbox" id="email"> <label for="email">透過電子郵件</label></div>
+            <div class="method"><input type="checkbox" id="madia"> <label for="madia">透過社交媒體(如:Line、IG、FB等等)</label></div>
+        </div>
 
-         <div id="team-profile" class="wrapper">
+        <div id="button" class="wrapper">
+            <button type="button">提交</button>
+        </div>
+
+        <div id="team-profile" class="wrapper">
             <div>
                 <h2>團隊資料</h2>
             </div>
@@ -198,7 +190,7 @@
                         </p>
                     </div><!-- /.location-info -->
                     <div class="location-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.256606538631!2d121.23858771500475!3d24.957382684008333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1688870986213!5m2!1szh-TW!2stw" width="700" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.256606538631!2d121.23858771500475!3d24.957382684008333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1688870986213!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div><!-- /.location-map -->
                 </div>
             </section>

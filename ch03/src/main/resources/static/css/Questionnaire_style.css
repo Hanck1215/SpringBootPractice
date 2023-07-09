@@ -298,52 +298,83 @@ input[type="text"] {
     border-bottom-style:groove;
 }
 
-#feedback-table {
-    padding-top: 16px;
+#feedback form {
+    padding-top: 10px;
     padding-bottom: 20px;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding-left: 10px;
 }
 
-#feedback-table th {
-    font-size: 1.5rem;
-    padding: 15px;
-    text-align: center;
-    border-radius: 4px;
+#fq1 {
+    margin-top: 18px ;
+    padding-bottom: 60px;
+}
+
+#fq1 div {
+    margin-top: 10px;
+    margin-left: 20px;
     border: 2px rgba(53, 37, 19, 0.555) solid;
+    border-radius: 6px;
+    padding: 10px;
 }
 
-#feedback-table td {
-    text-align: center;
-    border-radius: 4px;
-    border: 1px rgba(53, 37, 19, 0.555) solid;
+#fq1 div:hover {
+    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
 }
 
-#feedback-table td:hover {
-    background: rgba(255, 214, 188, 0.295);
+#fq2 {
+    margin-top: 18px ;
+    padding-bottom: 60px;
 }
 
-#feedback-table table {
-    border-radius: 8px;
-}
-
-#feedback-table .feedback-question {
+#fq2 div {
+    margin-top: 10px;
+    margin-left: 20px;
     border: 2px rgba(53, 37, 19, 0.555) solid;
-    font-size: 1rem;
-    padding: 0 12px;
+    border-radius: 6px;
+    padding: 10px;
 }
 
-#feedback-table .feedback-question:hover {
-    background: none;
+#fq2 div:hover {
+    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
 }
 
-#feedback-table .space {
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    height: 80px;
+#fq3 {
+    margin-top: 18px ;
+    padding-bottom: 60px;
 }
+
+#fq3 div {
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 2px rgba(53, 37, 19, 0.555) solid;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+#fq3 div:hover {
+    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
+}
+
+#fq4 {
+    margin-top: 18px ;
+    padding-bottom: 60px;
+}
+
+#fq4 div {
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 2px rgba(53, 37, 19, 0.555) solid;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+#fq4 div:hover {
+    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
+}
+
+
 
 #feedback-textarea-title {
     margin-top: 24px;
@@ -354,15 +385,16 @@ input[type="text"] {
 }
 
 #feedback-textarea {
-    margin-top: 20px;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
+    justify-items: centers;
 }
 
 textarea {
     width: 100%;
-    max-width: 480px;
-    height: 6rem;
+    max-width: 90%;
+    height: 24rem;
 }
 
 #contact {
@@ -435,6 +467,7 @@ textarea {
 .location-map {
     width: 74%;
     border-radius: 8px;
+    height: 480px;
 }
 
 .sub-title {
@@ -445,20 +478,59 @@ textarea {
 }
 
 #sns {
-    background: #FAF7F0;
     padding: 4% 0;
 }
 
 
 #sns .sub-title {
     margin-bottom: 30px;
-    text-align: center;
 }
 
 .sns-box {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #c7d8ad27;
+    padding: 5%;
+    border-radius: 12px;
+}
+
+#button {
+    margin-top: 12px;
+    color: rgb(41, 28, 9);
+    background-color: antiquewhite;
+    background: linear-gradient(to right, rgba(255, 251, 243, 0.849), transparent 160%) ;;
+    padding: 12px 24px;
+    padding-bottom: 50px;
+    border-top: 2px rgba(53, 37, 19, 0.555) solid;
+    border-left: 2px rgba(53, 37, 19, 0.555) solid;
+    border-right: 2px rgba(53, 37, 19, 0.555) solid;
+    border-bottom: 10px rgba(53, 37, 19, 0.555) solid;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#button {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+#button button {
+    padding: 8px;
+    font-size: 2rem;
+    color: #FAF7F0;
+    width: 100%;
+    max-width: 20%;
+    border-radius: 5px;
+    background-color: rgb(92, 83, 75);
+}
+
+#button button:hover {
+    background-color: rgb(160, 144, 131);
 }
 
 /* 手機版
@@ -580,6 +652,165 @@ textarea {
         margin-top: 2%;
         padding: 2rem;
         font-size: 1.6rem;
+    }
+
+    #fq1 {
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+    
+    #fq1 div {
+        margin-top: 2%;
+        padding: 2rem;
+        font-size: 1.6rem;
+    }
+    
+    #fq2 {
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+    
+    #fq2 div {
+        margin-top: 2%;
+        padding: 2rem;
+        font-size: 1.6rem;
+    }
+
+    #fq3 {
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+    
+    #fq3 div {
+        margin-top: 2%;
+        padding: 2rem;
+        font-size: 1.6rem;
+    }
+    
+
+    #fq4 {
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+    
+    #fq4 div {
+        margin-top: 2%;
+        padding: 2rem;
+        font-size: 1.6rem;
+    }
+
+    #feedback h2 {
+        font-size: 2.5rem;
+    }
+
+    #feedback form input {
+        zoom: 220%;
+    }
+
+    #feedback-textarea-title h3 {
+        margin-top: 5%;
+        font-size: 2.5rem;
+    }
+    
+    #feedback-textarea-title p { 
+        font-size: 1.5rem;
+        margin-top: 1%;
+        margin-bottom: 0.5%;
+    }
+
+    #contact h2 {
+        margin-top: 5%;
+        font-size: 2.5rem;
+    }
+
+    #contact p {
+        font-size: 1.5rem;
+        margin-top: 1%;
+        padding-bottom: 3%;
+    }
+
+    #contact input {
+        zoom: 220%;
+    }
+
+    #feedback-textarea {
+        padding: 3%;
+    }
+
+    #feedback-textarea textarea {
+        height: 24rem;
+    }
+
+    .method {
+        font-size: 1.5rem;
+        padding-bottom: 3%;
+    }
+
+    #button {
+        padding: 10% ;
+    }
+    
+    #button button {
+        font-size: 3rem;
+        width: 100%;
+        max-width: 60%;
+        padding: 5% 0 ;
+        border-radius: 12px;
+    }
+
+    #team-profile h2 {
+        margin-top: 5%;
+        font-size: 2.5rem;
+    }
+    
+    #location {
+        padding: 4% 0;
+    }
+    
+    #location .wrapper {
+        flex-direction: column;
+    }
+    
+    .location-info {
+        width: 100%;
+    }
+    
+    .location-info p {
+        padding: 12px 10px;
+    }
+    
+    .location-map {
+        width: 100%;
+        border-radius: 8px;
+        height: 1000px;
+    }
+    
+    .sub-title {
+        width: 100%;
+        max-width: 60%;
+        font-size: 1.375rem;
+        padding: 0 8px 8px;
+        border-bottom: 2px rgba(53, 37, 19, 0.5) solid;
+        font-weight: normal;
+    }
+    
+    #sns .sub-title {
+        margin-bottom: 30px;
+    }
+    
+    .sns-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+        border-radius: 12px;
+        background-color: #c7d8ad27;
+    }
+
+    #sns .wrapper {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
     }
     
 }
