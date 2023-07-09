@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="utf-8">
+        <title>Sugar Town - QUESTIONNAIRE</title>
+        <meta name="description" content="偵測您是否是健康好寶寶">
+        <!--<link rel="icon" type="image/png" href="images/favicon.png">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link href="css/Questionnaire_style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="container" class="wrapper">
+            <div id="title-Questionnaire">
+                <div>
+                    <h2>Questionnaire</h2>
+                    <p>檢測您是否為健康好寶寶</p>
+                </div>
+            </div>
+    
+            <div id="introduction">
+                <h2>介紹</h2>
+                <p>
+                    透過填寫本表單，您可以清楚了解 些因素會成為檢定糖尿病的條件，並可以由網站所顯示的分析結果
+                    來知道您是否有患上糖尿病的風險！
+                </p>
+            </div>
+        </div>
+        
+
+        <div id="basic-information" class="wrapper">
+            <h2>基本資料(資料保密)</h2>
+            <form class="information">
+                <div id="survey">
+                    <div>
+                        <label for="heigh">身高: </label>
+                        <input type="text" id="heigh" name="heigh">
+                    </div>
+    
+                    <div>
+                        <label for="weight">體重: </label>
+                        <input type="text" id="weight" name="weight">
+                    </div>
+    
+                    <div>
+                        <label for="age">年齡: </label>
+                        <input type="text" id="age" name="age">
+                    </div>
+    
+                    <div>
+                        <label for="blood_pressure">血壓: </label>
+                        <input type="text" id="blood_pressure" name="blood_pressure">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="multiple-choice" class="wrapper">
+            <h2>選擇最適合您的答案(請如實作答)</h2>
+
+            <form>
+                <div id="q1">
+                    <label>1. 您覺得生活壓力大嗎?</label>
+                    <label for="q1_true"><div><input type="radio" id="q1_true" name="q1_radio"> 是</div></label>
+                    <label for="q1_false">
+                        <div><input type="radio" id="q1_false" name="q1_radio"> 否</div>
+                    </label>
+                </div>
+
+                <div id="q2">
+                    <label>2. 請問您一個月內有幾天睡滿8小時呢?</label>
+                    <label for="q2_option1"><div><input type="checkbox" id="q2_option1"> 一天</div></label>
+                    <label for="q2_option2"><div><input type="checkbox" id="q2_option2"> 二天</div></label>
+                    <label for="q2_option3"><div><input type="checkbox" id="q2_option3"> 三天</div></label>
+                    <label for="q2_option4"><div><input type="checkbox" id="q2_option4"> 四天</div></label>
+                </div>
+
+                <div id="q3">
+                    <label>3. 運動習慣(每周)</label>
+                    <label for="q3_true"><div><input type="radio" id="q3_true" name="qi_radio"> 有</div></label>
+                    <label for="q3_false"><div><input type="radio" id="q3_false" name="qi_radio"> 無</div></label>
+                </div>
+
+                <div id="q4">
+                    <label>4. 飲食習慣</label>
+                    <div id="q4-1">
+                        <label>(1) 是否有吸毒: </label>
+                        <label for="q4-1_true"><div><input type="radio" id="q4-1_true" name="q4-1_radio"> 有</div></label>
+                        <label for="q4-1_false"><div><input type="radio" id="q4-1_false" name="q4-1_radio"> 無</div></label>
+                    </div>
+                    <div id="q4-2">
+                        <label>(2) 是否在進行養生飲食: </label>
+                        <label for="q4-2_true"><div><input type="radio" id="q4-2_true" name="q4-2_radio"> 有</div></label>
+                        <label for="q4-2_false"><div><input type="radio" id="q4-2_false" name="q4-2_radio"> 無</div></label>
+                    </div>
+                    <div id="q4-3">
+                        <label>(3) 您覺得最近兩個月內平均喝了幾杯消毒酒精: </label>
+                        <label for="q4-3_true"><div><input type="radio" id="q4-3_true" name="q4-3_radio"> 有</div></label>
+                        <label for="q4-3_false"><div><input type="radio" id="q4-3_false" name="q4-3_radio"> 無</div></label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="feedback" class="wrapper">
+            <div><h2>問卷回饋</h2></div>
+            
+            <div id="feedback-table">
+                <form>
+                    <table>
+                        <tr>
+                            <th>Statement</th>
+                            <th>Strongly Agree</th>
+                            <th>Agree</th>
+                            <th>Neutral</th>
+                            <th>Disagree </th>
+                            <th>Strongly Disagree</th>
+                        </tr>
+        
+                        <tr>
+                            <td class="feedback-question">是否滿意問卷內容?</td>
+                            <td><label for="sa1"><div class="space"><input type="radio" id="sa1" name="row1"></div></label></td>
+                            <td><label for="a1"><div class="space"><input type="radio" id="a1" name="row1"></div></label></td>
+                            <td><label for="n1"><div class="space"><input type="radio" id="n1" name="row1"></div></label></td>
+                            <td><label for="d1"><div class="space"><input type="radio" id="d1" name="row1"></div></label></td>
+                            <td><label for="sd1"><div class="space"><input type="radio" id="sd1" name="row1"></div></label></td>
+                        </tr>
+    
+                        <tr>
+                            <td class="feedback-question">是否滿意問卷的呈現方式?</td>
+                            <td><label for="sa2"><div class="space"><input type="radio" id="sa2" name="row2"></div></label></td>
+                            <td><label for="a2"><div class="space"><input type="radio" id="a2" name="row2"></div></label></td>
+                            <td><label for="n2"><div class="space"><input type="radio" id="n2" name="row2"></div></label></td>
+                            <td><label for="d2"><div class="space"><input type="radio" id="d2" name="row2"></div></label></td>
+                            <td><label for="sd2"><div class="space"><input type="radio" id="sd2" name="row2"></div></label></td>
+                        </tr>
+    
+                        <tr>
+                            <td class="feedback-question">問卷訊息宣傳是否完整，您是否滿意?</td>
+                            <td><label for="sa3"><div class="space"><input type="radio" id="sa3" name="row3"></div></label></td>
+                            <td><label for="a3"><div class="space"><input type="radio" id="a3" name="row3"></div></label></td>
+                            <td><label for="n3"><div class="space"><input type="radio" id="n3" name="row3"></div></label></td>
+                            <td><label for="d3"><div class="space"><input type="radio" id="d3" name="row3"></div></label></td>
+                            <td><label for="sd3"><div class="space"><input type="radio" id="sd3" name="row3"></div></label></td>
+                        </tr>
+    
+                        <tr>
+                            <td class="feedback-question">網站的操作是否滿意?</td>
+                            <td><label for="sa4"><div class="space"><input type="radio" id="sa4" name="row4"></div></label></td>
+                            <td><label for="a4"><div class="space"><input type="radio" id="a4" name="row4"></div></label></td>
+                            <td><label for="n4"><div class="space"><input type="radio" id="n4" name="row4"></div></label></td>
+                            <td><label for="d4"><div class="space"><input type="radio" id="d4" name="row4"></div></label></td>
+                            <td><label for="sd4"><div class="space"><input type="radio" id="sd4" name="row4"></div></label></td>
+                        </tr>
+    
+                    </table>
+                </form>
+            </div>
+            
+            <div id="feedback-textarea-title">
+                <h3>回饋我們~</h3>
+                <p>(想要鼓勵我們或是問卷和網站哪裡有要改進之處歡迎提出)</p>
+            </div>
+
+            <div id="feedback-textarea">
+                <textarea id="message" name="your-message" placeholder="詢問內容"></textarea>
+            </div>
+        </div>
+
+        <div id="contact" class="wrapper">
+            <div>
+                <h2>需要我們持續跟您作接觸嗎?</h2>
+                <p>如果您在完成問卷後願意與我們進一步聯繫，請告訴我們最好的聯繫方式！（這是自由選填的，資料 對保密不公開。）</p>
+            </div>
+            <div><input type="checkbox" id="email">透過電子郵件</div>
+            <div><input type="checkbox" id="madia">透過社交媒體(如:Line、IG、FB等等)</div>
+         </div>
+
+         <div id="team-profile" class="wrapper">
+            <div>
+                <h2>團隊資料</h2>
+            </div>
+
+            
+            <section id="location">
+                <div class="wrapper">
+                    <div class="location-info">
+                        <h3 class="sub-title">Chung Yuan Christian University</h3>
+                        <p>
+                            地址： 320桃園市中壢區中北路200號<br>
+                            電話： 03-1111-1111<br>
+                            營業時間： 10:00〜20:00<br>
+                            公休日：星期一~日
+                        </p>
+                    </div><!-- /.location-info -->
+                    <div class="location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.256606538631!2d121.23858771500475!3d24.957382684008333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1688870986213!5m2!1szh-TW!2stw" width="700" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div><!-- /.location-map -->
+                </div>
+            </section>
+
+            <section id="sns">
+                <div class="wrapper">
+                    <h3 class="sub-title">Instagram</h3>
+                    <div class="sns-box">
+                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CqSo0e_psVP/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/diabeteens_/" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看這則貼文</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CqSo0e_psVP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Town中之糖（@diabeteens_）分享的貼文</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+                    </div>
+                </div>
+            </section>
+            
+         </div>
+
+    </body>
+
+</html>

@@ -3,7 +3,6 @@ package com.sun.ch03.controller;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping ;
@@ -30,7 +29,7 @@ public class DemoController {
 		return "Finish" ;
 	}
 	
-	@PostMapping("/obj")
+	@RequestMapping("/obj")
 	public String handleObj(User user) {
 		System.out.println(user) ; 
 		System.out.println(user.getUsername()) ; 
