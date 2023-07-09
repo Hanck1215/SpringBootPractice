@@ -68,13 +68,13 @@ html {
 }
 
 #introduction h2{
-    color: aliceblue;
-    text-shadow: 0 0 0.15em rgb(255, 211, 145), 0 0 0.15em rgb(131, 107, 0) ;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 0.1em rgb(255, 230, 199), 0 0 0.1em rgb(255, 226, 96) ;
 }
 
 #introduction p{
     color: aliceblue;
-    text-shadow: 0 0 0.15em rgb(255, 211, 145), 0 0 0.15em rgb(255, 242, 182) ;
+    text-shadow: 0 0 0.1em rgb(255, 235, 204), 0 0 0.1em rgb(255, 224, 88) ;
 }
 
 #basic-information {
@@ -128,7 +128,7 @@ textarea {
 
 
 input[type="text"] {
-    width: 100%;
+    width: 90%;
     max-width: 480px;
 }
 
@@ -271,7 +271,7 @@ input[type="text"] {
 }
 
 #q4-3 div:hover {
-    background: linear-gradient(to right, rgba(255, 231, 184, 0.788), transparent 105%) ;
+    background: linear-gradient(to right, rgba(255, 239, 206, 0.849), transparent 105%) ;
 }
 
 #feedback {
@@ -463,8 +463,123 @@ textarea {
 
 /* 手機版
 ------------------------------- */
-@media (max-width: 600px) {
+@media (max-width: 1300px) {
+    html {
+        font-size: 160%;
+    }
     body {
         width: max-content;
     }
+
+    #container {
+        height: 720px;
+    }
+
+    #title-Questionnaire div {
+        padding: 3% 0;
+    }
+
+    #introduction {
+        font-size: 1.25rem;
+        padding-top: 2%;
+        padding-bottom: 6%;
+    }
+
+    #title-Questionnaire {
+        padding-top: 8%;
+        padding-bottom: 2%;
+    }
+
+    #basic-information h2 {
+        font-size: 3rem;
+    }
+    
+    #survey {
+        font-size: 2rem;
+    }
+
+    input[type="text"],
+    textarea {
+        border: 1px rgba(53, 37, 19, 0.5) solid;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+
+    #multiple-choice h2 {
+        font-size: 2.5rem;
+    }
+
+    #multiple-choice form input {
+        zoom: 220%;
+    }
+
+    #q1 {
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+    
+    #q1 div {
+        margin-top: 2%;
+        padding: 2rem;
+        font-size: 1.6rem;
+    }
+    
+    #q2 {
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+    
+    #q2 div {
+        margin-top: 2%;
+        padding: 2rem;
+        font-size: 1.6rem;
+    }
+    
+    #q3 {
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+    
+    #q3 div {
+        margin-top: 2%;
+        padding: 2rem;
+        font-size: 1.6rem;
+    }
+    
+    #q4 {
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+    
+    #q4-1 {
+        font-size: 1.6rem;
+    }
+    
+    #q4-1 div {
+        margin-top: 2%;
+        padding: 2rem;
+        font-size: 1.6rem;
+    }
+    
+    #q4-2 {
+        font-size: 1.6rem;
+    }
+    
+    #q4-2 div {
+        margin-top: 2%;
+        padding: 2rem;
+        font-size: 1.6rem;
+    }
+    
+    #q4-3 {
+        font-size: 1.6rem;
+    }
+    
+    #q4-3 div {
+        margin-top: 2%;
+        padding: 2rem;
+        font-size: 1.6rem;
+    }
+    
 }
