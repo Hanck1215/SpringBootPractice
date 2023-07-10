@@ -3,6 +3,7 @@ package com.sun.ch03.controller;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping ;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController ;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.sun.ch03.model.User;
+import com.sun.ch03.model.Questionaire;
 
 @RestController
 @RequestMapping("/handle")
@@ -40,10 +42,12 @@ public class DemoController {
 		System.out.println(user.getInterests()) ; 
 		return "Finish" ;
 	}
+	//@RequestBody User user
 	
+	@CrossOrigin()
 	@RequestMapping("/json")
-	public String handleJson(@RequestBody User user) {
-		System.out.println(user.getUsername()) ; 
+	public String handleJson() {
+		System.out.println("hi") ; 
 		return "Finish" ;
 	}
 	
@@ -65,6 +69,13 @@ public class DemoController {
 	@RequestMapping("/allHeaders")
 	public String handleAllHeaders(@RequestHeader Map headersMap) {
 		System.out.println(headersMap) ;
+		return "Finish" ;
+	}
+	
+	@CrossOrigin()
+	@RequestMapping("/participant_basic_information")
+	public String handleParticipant_basic_information(@RequestBody Questionaire qtnr) {
+		System.out.println(qtnr.getHeight()) ; 
 		return "Finish" ;
 	}
 	
