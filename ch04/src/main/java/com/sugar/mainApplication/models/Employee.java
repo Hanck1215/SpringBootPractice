@@ -9,9 +9,9 @@ import lombok.Data;
 @AllArgsConstructor
 @Data
 public class Employee {
-	private Integer no ;
-	private String name ;
-	private Integer age ;
+	public Integer no ;
+	public String name ;
+	public Integer age ;
 	private Float salary ;
 	private LocalDate hireDay ;
 	private List<String> skills ;
@@ -24,4 +24,6 @@ public class Employee {
 		this.hireDay = of ;
 		this.skills = asList ;
 	}
+	
+	public LocalDate getHireDay() { return this.hireDay ; }
 }
