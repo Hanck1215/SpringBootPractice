@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>View Page</title>
-</head>
-<body>
-    <h1><span th:text="${message}"></span></h1>
-    <p>Spring: <span th:text="${welcomeMessage}"></span></p>
-</body>
+	<head>
+	    <title>View Page</title>
+	</head>
+	<body>
+	    <form:form method="POST" action="/spring-mvc-basics/addEmployee" 
+		  modelAttribute="employee">
+		    <form:label path="name">Name</form:label>
+		    <form:input path="name">
+		    
+		    <form:label path="id">Id</form:label>
+		    <form:input path="id">
+		    
+		    <input type="submit" value="Submit">
+		</form:form>
+	</body>
 </html>
