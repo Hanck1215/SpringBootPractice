@@ -5,9 +5,7 @@
 		<title>首頁</title>
 	</head>
 	<body>
-		<div data-th-object="${session.user}">
-			<p><span data-th-text="*{getHireDay}"></span></p>
-			<p><span data-th-text="*{age}"></span></p>
-		</div>
+		<p data-th-text="|123${session.user.name}|"></p>
+		<a data-th-href="@{http://www.thymeleaf.org}">thymeleaf</a>
 	</body>
 </html>
